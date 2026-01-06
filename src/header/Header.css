@@ -1,0 +1,49 @@
+.topbar {
+  background-color: #c01218;
+  color: white;
+  border-radius: 4px;
+  cursor: pointer;
+  padding: 8px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 14px;
+  
+}
+.topbar-left a ,.topbar-right a   {
+  color: inherit;          
+  text-decoration: none;
+}
+.topbar-left a:hover {
+  text-decoration: underline; 
+}
+
+.topbar-left span {
+  margin-right: 27px;
+}
+.topbar-left i {
+  margin-right: 6px;
+}
+.topbar-right i {
+  margin-left: 20px;
+}
+.topbar-right i:hover {
+  opacity: 0.8;
+  transform: scale(1.5);
+  transition: color 1.2s ease,transform 2s ease;
+}
+.fab.fa-facebook-f:hover {
+  color: #1877f2; 
+}
+.fab.fa-twitter:hover {
+  color: #1da1f2;
+}
+.fab.fa-youtube:hover {
+  color: #ff0000;
+}
+.fab.fa-instagram:hover {
+  color: #e4405f;
+}
+.fab.fa-linkedin-in:hover {
+ color: #0077b5; 
+}
