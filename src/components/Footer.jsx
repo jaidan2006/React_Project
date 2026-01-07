@@ -1,11 +1,11 @@
 import React from "react"
-import "./Header.css"
+import "./Footer.css"
 import "@fortawesome/fontawesome-free/css/all.min.css";
 
-const Header = () => {
+const Footer = () => {
   return (
-   <div className="topbar">
-      <div className="topbar-left">
+   <div className="bottombar">
+      <div className="bottombar-left">
         <span>
           <i className="fas fa-phone"></i><a href="tel:+914466949352">044-66949352</a>
 
@@ -16,7 +16,7 @@ const Header = () => {
         </span>
       </div>
 
-      <div className="topbar-right">
+      <div className="bottombar-right">
         <a href="https://www.facebook.com/ValleyPointTechnologies/photos/"><i className="fab fa-facebook-f"></i></a>
         <a href="https://x.com/valleypointtech"><i className="fab fa-twitter"></i></a>
         <a href="https://www.youtube.com"><i className="fab fa-youtube"></i></a>
@@ -27,4 +27,4 @@ const Header = () => {
   )
 }
 
-export default Header
+export default Footer

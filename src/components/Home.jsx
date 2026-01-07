@@ -1,7 +1,31 @@
-import React from 'react';
-import './Home.css';
+import React, { useEffect, useState } from "react";
+import "./Home.css";
 
 const Home = () => {
+  const [years, setYears] = useState(0);
+  const [clients, setClients] = useState(0);
+  const [success, setSuccess] = useState(0);
+
+  useEffect(() => {
+    const yearsInterval = setInterval(() => {
+      setYears((prev) => (prev < 25 ? prev + 1 : prev));
+    }, 240);
+
+    const clientsInterval = setInterval(() => {
+      setClients((prev) => (prev < 50 ? prev + 1 : prev));
+    }, 120);
+
+    const successInterval = setInterval(() => {
+      setSuccess((prev) => (prev < 98 ? prev + 1 : prev));
+    }, 61);
+
+    return () => {
+      clearInterval(yearsInterval);
+      clearInterval(clientsInterval);
+      clearInterval(successInterval);
+    };
+  }, []);
+
   return (
     <div className="home-container">
       <div className="home-content">
@@ -13,8 +37,10 @@ const Home = () => {
           </h1>
 
           <p className="home-description">
-         We provide top-of-the-range website design and development, graphic designing, digital marketing, SEO services, and Mobile Apps development, among others.</p>
-          
+            We provide top-of-the-range website design and development,
+            graphic designing, digital marketing, SEO services, and Mobile Apps
+            development, among others.
+          </p>
 
           <div className="home-button-group">
             <button className="btn-filled">Get a Free Consultation</button>
@@ -24,15 +50,17 @@ const Home = () => {
 
           <div className="home-stats">
             <div className="stat-box">
-              <span className="stat-number">25+</span>
+              <span className="stat-number">{years}+</span>
               <span className="stat-label">Years Experience</span>
             </div>
+
             <div className="stat-box">
-              <span className="stat-number">50+</span>
+              <span className="stat-number">{clients}+</span>
               <span className="stat-label">Clients Worldwide</span>
             </div>
+
             <div className="stat-box">
-              <span className="stat-number">98%</span>
+              <span className="stat-number">{success}%</span>
               <span className="stat-label">Success Rate</span>
             </div>
           </div>
@@ -41,9 +69,10 @@ const Home = () => {
         {/* Right Section */}
         <div className="home-image-side">
           <div className="image-frame">
-            
             <img
-              src="https://www.valleypointtechnologies.com/assets/img/prod-eng.png" />
+              src="https://www.valleypointtechnologies.com/assets/img/prod-eng.png"
+              alt="Web Development"
+            />
           </div>
         </div>
 
