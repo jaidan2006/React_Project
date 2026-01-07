@@ -45,7 +45,6 @@ const Home = () => {
           <div className="home-button-group">
             <button className="btn-filled">Get a Free Consultation</button>
             <button className="btn-outline">Our Services</button>
-            <button className="btn-outline">Our Products</button>
           </div>
 
           <div className="home-stats">

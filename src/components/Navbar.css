@@ -38,7 +38,7 @@
 
 .navbar-menu a.active {
   color: #E31E24;
-  position: relative;
+  
   text-decoration: underline;
 }
 
