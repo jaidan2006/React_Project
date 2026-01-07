@@ -1,4 +1,3 @@
-/* General font for the section */
 .about-section {
   font-family: 'sans-serif';
 }
@@ -6,28 +5,46 @@
 /* Top Dark Section */
 .about-top {
   background-color: #1e1e38;
+   background-image: radial-gradient(
+    rgba(255, 255, 255, 0.15) 1px,
+    transparent 1.3px
+  );
+  background-size: 40px 40px;
   color: white;
   padding: 80px 10%;
   text-align: left;
 }
 
-.about-heading {
+.about-heading , .about-legacy-heading {
   font-size: 36px;
   margin-bottom: 20px;
 }
 
 .about-description {
+  text-indent: 30px;
   max-width: 600px;
   line-height: 1.6;
   color: #ccc;
+  margin-bottom: 30px;
 }
+
+.about-legacy-quote {
+  text-indent: 30px;
+  font-size: 20px;
+  color: #fbbf24; 
+  font-style: italic;
+  margin-top: 20px;
+  max-width: 600px;
+  line-height: 1.5;
+}
+
 
 /* Bottom White Section */
 .about-bottom {
   display: flex;
   flex-wrap: wrap;
   padding: 100px 10%;
-  gap: 50px;
+  gap: 100px;
   align-items: center;
 }
 
@@ -45,7 +62,7 @@
 .about-stat-card {
   padding: 40px;
   text-align: center;
-  border: 0.5px solid #eee;
+  border: 2px solid  #aeabab;
 }
 
 .about-stat-number {
@@ -68,7 +85,7 @@
 .about-subheading {
   color: #e11d48;
   margin: 0 0 10px 0;
-  font-size: 14px;
+  font-size: 24px;
 }
 
 .about-title {
@@ -79,7 +96,65 @@
 }
 
 .about-paragraph {
+  text-indent: 30px;
   color: #555;
   line-height: 1.7;
 }
 
+@media (max-width: 768px) {
+  .about-top {
+    padding: 60px 5%;
+    text-align: center;
+  }
+
+  .about-heading {
+    font-size: 28px;
+  }
+
+  .about-description {
+    font-size: 15px;
+    max-width: 100%;
+  }
+
+  .about-legacy-heading {
+    font-size: 22px;
+  }
+
+  .about-legacy-quote {
+    font-size: 14px;
+  }
+
+  .about-bottom {
+    flex-direction: column;
+    padding: 50px 5%;
+    gap: 40px;
+  }
+
+  .about-stats {
+    grid-template-columns: 1fr;
+  }
+
+  .about-stat-card {
+    padding: 30px;
+  }
+
+  .about-stat-number {
+    font-size: 26px;
+  }
+
+  .about-text {
+    text-align: center;
+  }
+
+  .about-subheading {
+    font-size: 20px;
+  }
+
+  .about-title {
+    font-size: 26px;
+  }
+
+  .about-paragraph {
+    font-size: 14px;
+  }
+}

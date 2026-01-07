@@ -18,8 +18,14 @@ const goHome = () => {
         
          <nav className="navbar-menu">
       <a href="#home" onClick={(e) => { e.preventDefault(); goHome(); }} className="active">Home</a>
-          <a href="#about">About</a>
-          <a href="#services">Services</a>
+        
+      <a href="#about" onClick={(e) => {
+          e.preventDefault();       
+          navigate("/about");       
+          window.scrollTo({ top: 0, behavior: "smooth" }); 
+        }}>About</a>
+
+     <a href="#services">Services</a>
           <a href="#clients">Clients</a>
           <a href="#team">Team</a>
           <a href="#contact">Contact</a>
