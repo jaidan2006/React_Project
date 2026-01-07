@@ -1,13 +1,11 @@
 .bottombar {
   background-color: #c01218;
   color: white;
-  cursor: pointer;
   padding: 8px 40px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   font-size: 14px;
-  
 }
 .bottombar-left a ,.bottombar-right a   {
   color: inherit;          

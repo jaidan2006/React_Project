@@ -1,0 +1,85 @@
+/* General font for the section */
+.about-section {
+  font-family: 'sans-serif';
+}
+
+/* Top Dark Section */
+.about-top {
+  background-color: #1e1e38;
+  color: white;
+  padding: 80px 10%;
+  text-align: left;
+}
+
+.about-heading {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.about-description {
+  max-width: 600px;
+  line-height: 1.6;
+  color: #ccc;
+}
+
+/* Bottom White Section */
+.about-bottom {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 100px 10%;
+  gap: 50px;
+  align-items: center;
+}
+
+/* Stats Grid */
+.about-stats {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  border: 1px solid #eee;
+  border-radius: 15px;
+  overflow: hidden;
+  flex: 1;
+  min-width: 300px;
+}
+
+.about-stat-card {
+  padding: 40px;
+  text-align: center;
+  border: 0.5px solid #eee;
+}
+
+.about-stat-number {
+  font-size: 32px;
+  margin: 0 0 10px 0;
+}
+
+.about-stat-text {
+  font-size: 14px;
+  color: #666;
+  font-weight: bold;
+}
+
+/* Right Side Text */
+.about-text {
+  flex: 1;
+  min-width: 300px;
+}
+
+.about-subheading {
+  color: #e11d48;
+  margin: 0 0 10px 0;
+  font-size: 14px;
+}
+
+.about-title {
+  font-size: 32px;
+  color: #1e1e38;
+  line-height: 1.2;
+  margin-bottom: 20px;
+}
+
+.about-paragraph {
+  color: #555;
+  line-height: 1.7;
+}
+

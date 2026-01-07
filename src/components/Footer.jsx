@@ -22,7 +22,12 @@ const Footer = () => {
         <a href="https://www.youtube.com"><i className="fab fa-youtube"></i></a>
         <a href="https://www.instagram.com/valleypointtechnologies/"><i className="fab fa-instagram"></i></a>
         <a href="https://in.linkedin.com/company/valley-point-technologies"><i className="fab fa-linkedin-in"></i></a>
+        
       </div>
+       <p>
+      © Copyright {new Date().getFullYear()} Valleypoint Technologies Pvt Ltd.
+      All Rights Reserved.
+    </p>
     </div>
   )
 }
