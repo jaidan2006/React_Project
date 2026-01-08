@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import "./Home.css";
+import { useNavigate } from "react-router-dom";
 
 const Home = () => {
   const [years, setYears] = useState(0);
@@ -26,6 +27,13 @@ const Home = () => {
     };
   }, []);
 
+  const navigate = useNavigate()
+
+  const goContact = () => {
+    navigate("/contact");
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  };
+
   return (
     <div className="home-container">
       <div className="home-content">
@@ -43,7 +51,7 @@ const Home = () => {
           </p>
 
           <div className="home-button-group">
-            <button className="btn-filled">Get a Free Consultation</button>
+            <button className="btn-filled" onClick={(e) => { e.preventDefault(); goContact(); }}>Get a Free Consultation</button>
             <button className="btn-outline">Our Services</button>
           </div>
 

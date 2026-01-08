@@ -1,4 +1,4 @@
-.bottombar {
+.bottombar{
   background-color: #c01218;
   color: white;
   padding: 8px 40px;
@@ -6,6 +6,9 @@
   justify-content: space-between;
   align-items: center;
   font-size: 14px;
+}
+.copy{
+  color:white
 }
 .bottombar-left a ,.bottombar-right a   {
   color: inherit;          

@@ -1,0 +1,146 @@
+* {
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
+}
+
+.contact-page {
+  padding: 40px;
+  background: #ffffff;
+}
+
+.contact-header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.contact-badge {
+  display: inline-block;
+  background: #e6f4f1;
+  color: #00897b;
+  padding: 6px 18px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.contact-header h1 {
+  margin: 10px 0;
+  font-size: 36px;
+  color: #003b3b;
+}
+
+.contact-container {
+  display: flex;
+  gap: 40px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.contact-info,
+.contact-form {
+  background: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+.contact-info {
+  width: 35%;
+}
+
+.contact-info h2 {
+  margin-bottom: 10px;
+  color: #003b3b;
+}
+.info-block {
+  margin-top: 20px;
+}
+.info-block a ,p{
+  font-size: 14px;
+  color: #555;
+  text-decoration: none;
+}
+.info-block p{
+  margin-left: 5px;
+}
+
+.info-block strong {
+  display: block;
+  margin-bottom: 6px;
+  color: #00897b;
+}
+
+
+.contact-form {
+  width: 65%;
+}
+
+.form-row {
+  display: flex;
+  gap: 20px;
+}
+
+.form-group {
+  width: 100%;
+  margin-bottom: 18px;
+}
+
+.form-group label {
+  display: block;
+  font-size: 14px;
+  margin-bottom: 6px;
+  color: #333;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 14px;
+  resize: none;
+  outline: none;
+}
+.form-group input:focus,
+.form-group textarea:focus{
+  border: 1px solid rgb(1, 255, 1);
+}
+.form-group span{
+  color: red;
+}
+
+.submit-btn {
+  width: 100%;
+  background: #00897b;
+  color: #fff;
+  padding: 12px;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.submit-btn:hover {
+  background: #00796b;
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+  .contact-container {
+    flex-direction: column;
+  }
+
+  .contact-info,
+  .contact-form {
+    width: 100%;
+  }
+
+  .form-row {
+    flex-direction: column;
+  }
+  .form-group textarea{
+    height: 200px;
+  }
+}

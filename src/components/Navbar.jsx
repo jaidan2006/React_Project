@@ -28,7 +28,12 @@ const goHome = () => {
      <a href="#services">Services</a>
           <a href="#clients">Clients</a>
           <a href="#team">Team</a>
-          <a href="#contact">Contact</a>
+          
+          <a href="#contact" onClick={(e) => {
+          e.preventDefault();       
+          navigate("/contact");       
+          window.scrollTo({ top: 0, behavior: "smooth" }); 
+        }}>Contact</a>
         </nav>
        <div className="navbar-cta">
           <a href="#get-started" className="btn-primary">Get Started</a>

@@ -43,7 +43,7 @@
 .about-bottom {
   display: flex;
   flex-wrap: wrap;
-  padding: 100px 10%;
+  padding: 50px;
   gap: 100px;
   align-items: center;
 }
@@ -102,6 +102,63 @@
 }
 
 @media (max-width: 768px) {
+  .about-top {
+    padding: 60px 5%;
+    text-align: center;
+  }
+
+  .about-heading {
+    font-size: 28px;
+  }
+
+  .about-description {
+    font-size: 15px;
+    max-width: 100%;
+  }
+
+  .about-legacy-heading {
+    font-size: 22px;
+  }
+
+  .about-legacy-quote {
+    font-size: 14px;
+  }
+
+  .about-bottom {
+    flex-direction: column;
+    padding: 50px 5%;
+    gap: 40px;
+  }
+
+  .about-stats {
+    grid-template-columns: 1fr;
+  }
+
+  .about-stat-card {
+    padding: 30px;
+  }
+
+  .about-stat-number {
+    font-size: 26px;
+  }
+
+  .about-text {
+    text-align: center;
+  }
+
+  .about-subheading {
+    font-size: 20px;
+  }
+
+  .about-title {
+    font-size: 26px;
+  }
+
+  .about-paragraph {
+    font-size: 14px;
+  }
+}
+@media (min-width: 768px) and (max-width: 1030px) {
   .about-top {
     padding: 60px 5%;
     text-align: center;

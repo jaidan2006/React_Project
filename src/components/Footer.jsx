@@ -24,7 +24,7 @@ const Footer = () => {
         <a href="https://in.linkedin.com/company/valley-point-technologies"><i className="fab fa-linkedin-in"></i></a>
         
       </div>
-       <p>
+       <p className="copy">
       © Copyright {new Date().getFullYear()} Valleypoint Technologies Pvt Ltd.
       All Rights Reserved.
     </p>
