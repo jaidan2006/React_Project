@@ -47,8 +47,7 @@ const About = () => {
       <section className="about-top">
         <h1 className="about-heading">Who we are?</h1>
         <p className="about-description">
-          Founded in 2011, ValleyPoint has been on a journey to revolutionize e-commerce and IT services.
-          Over the years, we've grown into a dynamic team of professionals dedicated to delivering excellence in everything we do.
+          Founded in 2011, ValleyPoint has been on a journey to revolutionize IT services. Over the years, we've grown into a dynamic team of professionals dedicated to delivering excellence in everything we do.
         </p>
          <h3 className="about-legacy-heading">Our Legacy</h3>
   <p className="about-legacy-quote">

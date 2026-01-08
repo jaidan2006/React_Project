@@ -33,7 +33,11 @@ const goHome = () => {
           window.scrollTo({ top: 0, behavior: "smooth" }); 
         }}>Clients</a>
 
-          <a href="#team">Team</a>
+         <a href="#team" onClick={(e) => {
+          e.preventDefault();       
+          navigate("/team");       
+          window.scrollTo({ top: 0, behavior: "smooth" }); 
+        }}>Team</a>
           
           <a href="#contact" onClick={(e) => {
           e.preventDefault();       
@@ -42,7 +46,11 @@ const goHome = () => {
         }}>Contact</a>
         </nav>
        <div className="navbar-cta">
-          <a href="#get-started" className="btn-primary">Get Started</a>
+          <a href="#about" className="btn-primary" onClick={(e) => {
+          e.preventDefault();       
+          navigate("/about");       
+          window.scrollTo({ top: 0, behavior: "smooth" }); 
+        }}>Get Started</a>
         </div>
 
       </div>
