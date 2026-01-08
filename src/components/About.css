@@ -101,7 +101,7 @@
   line-height: 1.7;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 480px) {
   .about-top {
     padding: 60px 5%;
     text-align: center;

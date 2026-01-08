@@ -81,7 +81,7 @@ const Contact = () => {
             <div className="form-row">
               <div className="form-group">
                 <label>Email <span>*</span></label>
-                <input type="email" placeholder="Enter your email (eg.,example@gmail.com)" required pattern="^[^\s@]+@[^\s@]+\.[^\s@]+$" />
+                <input type="email" placeholder="eg: example@gmail.com" required pattern="^[^\s@]+@[^\s@]+\.[^\s@]+$" />
               </div>
 
               <div className="form-group">

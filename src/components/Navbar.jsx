@@ -26,7 +26,13 @@ const goHome = () => {
         }}>About</a>
 
      <a href="#services">Services</a>
-          <a href="#clients">Clients</a>
+     
+          <a href="#clients" onClick={(e) => {
+          e.preventDefault();       
+          navigate("/clients");       
+          window.scrollTo({ top: 0, behavior: "smooth" }); 
+        }}>Clients</a>
+
           <a href="#team">Team</a>
           
           <a href="#contact" onClick={(e) => {
