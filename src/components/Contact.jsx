@@ -5,7 +5,7 @@ const Contact = () => {
   return (
     <div className="contact-page">
       <div className="contact-header">
-        <span className="contact-badge">CONTACT</span>
+        <span className="contact-badge">VALLEY POINT TECHNOLOGIES</span>
         <h1>Contact Us</h1>
       </div>
 
@@ -15,7 +15,7 @@ const Contact = () => {
           <h2>Contact Information</h2>
           <p>
             Feel free to reach out with any questions about the products and
-            services.
+            services. Our team will contact you within 24 hours.
           </p>
 
           <div className="info-block">
@@ -35,31 +35,30 @@ const Contact = () => {
             <strong><i className="fa-solid fa-location-dot"></i> Address:</strong>
 
             <p>
-              <img style={{ width: "40px" }} src="https://whatemoji.org/wp-content/uploads/2020/07/India-Emoji.png" required /><br required />
-              Valleypoint Technologies Pvt Ltd.<br required />
-              #7 , Rosy Tower ,<br required />
-              Nungambakkam High Road<br required />
+              <img style={{ width: "40px" }} src="https://whatemoji.org/wp-content/uploads/2020/07/India-Emoji.png"/><br/>
+              Valleypoint Technologies Pvt Ltd.<br/>
+              #7 , Rosy Tower ,<br/>
+              Nungambakkam High Road<br/>
               Nungambakkam, Chennai - 600034.
             </p>
             <p>
-              <img style={{ width: "40px", marginBottom: "6px" }} src="https://logos-world.net/wp-content/uploads/2023/11/American-Flag-Emoji.png" required /><br required />
-              Valleypoint Technologies Pvt Ltd.<br required />
-              2055 Limestone Rd,<br required />
-              STE 200-c, Wilmington, DE,<br required />
+              <img style={{ width: "40px", marginBottom: "6px" }} src="https://logos-world.net/wp-content/uploads/2023/11/American-Flag-Emoji.png"/><br/>
+              Valleypoint Technologies Pvt Ltd.<br/>
+              2055 Limestone Rd,<br/>
+              STE 200-c, Wilmington, DE,<br/>
               New Castle USA - 19808.
             </p>
-            <p>
-              <strong><i className="fa-solid fa-clock"></i> Opening Hours:</strong><b required />
-              Mon-Sat: 10 AM - 7 PM<br required />
-              Sunday: Closed
-            </p>
-
-
-
+            
           </div>
 
-
+        <div className="info-block">
+             <strong><i className="fa-solid fa-clock"></i> Opening Hours:</strong>
+            <p>
+              Mon-Sat: 10 AM - 7 PM<br/>
+              Sunday: Closed
+            </p>
         </div>
+      </div>
 
         {/* RIGHT SECTION */}
           <div className="contact-form">

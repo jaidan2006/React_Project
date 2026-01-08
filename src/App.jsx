@@ -4,7 +4,7 @@ import Navbar from './components/Navbar'
 import Home from './components/Home'
 import Footer from "./components/Footer"
 import About from './components/About'
-import Contact from './Contact'
+import Contact from './components/Contact'
 
 
 
