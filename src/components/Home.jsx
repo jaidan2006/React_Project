@@ -34,7 +34,12 @@ const Home = () => {
     window.scrollTo({ top: 0, behavior: "smooth" });
   };
 
-const goProducts = () => {
+const goServices = () => {
+    navigate("/services");
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  };
+
+ const goProducts = () => {
   navigate("/clients");
      setTimeout(() => {
     window.scrollTo({
@@ -62,7 +67,7 @@ const goProducts = () => {
 
           <div className="home-button-group">
             <button className="btn-filled" onClick={(e) => { e.preventDefault(); goContact(); }}>Get a Free Consultation</button>
-            <button className="btn-outline">Our Services</button>
+            <button className="btn-outline" onClick={(e) => { e.preventDefault(); goServices(); }}>Our Services</button>
             <button className="btn-outline" onClick={(e) => { e.preventDefault(); goProducts(); }}>Our Products</button>
           </div>
 

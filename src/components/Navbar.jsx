@@ -25,7 +25,11 @@ const goHome = () => {
           window.scrollTo({ top: 0, behavior: "smooth" }); 
         }}>About</a>
 
-     <a href="#services">Services</a>
+     <a href="#services" onClick={(e) => {
+          e.preventDefault();       
+          navigate("/services");       
+          window.scrollTo({ top: 0, behavior: "smooth" }); 
+        }}>Services</a>
      
           <a href="#clients" onClick={(e) => {
           e.preventDefault();       
